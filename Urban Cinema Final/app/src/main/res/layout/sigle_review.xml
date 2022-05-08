@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="3dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/singleCard"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="80dp"
+            app:layout_constraintHorizontal_bias="0.612"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintVertical_bias="0.4">
+
+            <ImageView
+                android:id="@+id/acc_userimg"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/userimg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.cardview.widget.CardView>
+
+
+        <View
+            android:id="@+id/feedbackArea1"
+            android:layout_width="376dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/singleRt"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:background="#2B3543"
+            android:backgroundTintMode="add"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/singleRt" />
+
+        <RatingBar
+
+            android:id="@+id/singleRt"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userName"
+            android:layout_alignEnd="@+id/userName"
+            android:layout_alignRight="@+id/userName"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="-16dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:numStars="5"
+            android:progressTint="@color/yellow"
+            android:rating="5"
+            android:scaleX=".4"
+            android:scaleY=".4"
+            android:stepSize="0.5"
+            app:layout_wrapBehaviorInParent="skipped"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="178dp"
+            android:layout_height="19dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="145dp"
+            android:layout_marginRight="145dp"
+            android:layout_toEndOf="@+id/cardView2"
+            android:layout_toRightOf="@+id/cardView2"
+            android:text="@string/userName"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/posteddate"
+            android:layout_width="190dp"
+            android:layout_height="16dp"
+
+            android:layout_below="@+id/singleRt"
+            android:layout_alignEnd="@+id/singleRt"
+            android:layout_alignRight="@+id/singleRt"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="-18dp"
+            android:layout_marginEnd="-25dp"
+            android:layout_marginRight="-25dp"
+            android:layout_toEndOf="@+id/cardView2"
+            android:layout_toRightOf="@+id/cardView2"
+            android:text="Aug 21, 2021"
+            android:textColor="#ACACAC"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/userName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/userName"
+            app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="337dp"
+            android:layout_height="70dp"
+            android:layout_alignStart="@+id/feedbackArea1"
+            android:layout_alignLeft="@+id/feedbackArea1"
+            android:layout_alignTop="@+id/feedbackArea1"
+            android:layout_alignEnd="@+id/feedbackArea1"
+            android:layout_alignRight="@+id/feedbackArea1"
+            android:layout_alignBottom="@+id/feedbackArea1"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/review"
+            android:textColor="#FFFFFF"
+            app:layout_constraintHorizontal_bias="0.538" />
+
+        <ImageView
+            android:id="@+id/options"
+            android:layout_width="31dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/userName"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="107dp"
+            android:layout_marginLeft="107dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_toEndOf="@+id/singleRt"
+            android:layout_toRightOf="@+id/singleRt"
+            app:srcCompat="@drawable/ic_baseline_more_vert_24"
+            tools:ignore="VectorDrawableCompat" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

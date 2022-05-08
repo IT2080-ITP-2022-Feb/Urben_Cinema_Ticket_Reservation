@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.urbanres">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UrbanRes">
+<!--        <activity-->
+<!--            android:name=".start"-->
+<!--            android:exported="false" />-->
+        <activity android:name=".Reservation.changeDate" />
+        <activity android:name=".Reservation.EditReservation" />
+        <activity android:name=".Reservation.Confirmation" />
+        <activity android:name=".Reservation.Summery" />
+        <activity android:name=".Reservation.Tickets" />
+        <activity android:name=".Reservation.ReserveNowActivity" />
+        <activity android:name=".Reservation.displayBooking" />
+<!--        <activity android:name=".Movies.Login" />-->
+        <activity android:name=".Movies.UserHome" />
+        <activity android:name=".Movies.MovieDetails" />
+        <activity android:name=".Movies.add_movies" />
+        <activity android:name=".Movies.add_movies_2" />
+        <activity android:name=".Movies.displayMovies" />
+        <activity android:name=".Movies.startup" />
+        <activity android:name=".Movies.EditMovie" />
+        <activity android:name=".Movies.UserRegistration" />
+        <activity android:name=".Reviews.PostReview" />
+        <activity android:name=".Reviews.TheaterRev" />
+        <activity android:name=".Reviews.GetReviews" />
+        <activity android:name=".Reviews.Accinfo" />
+        <activity android:name=".Reviews.Accinfo2" />
+
+        <activity android:name=".Food.FoodList"/>
+        <activity android:name=".Food.FoodMain"/>
+        <activity android:name=".Food.AddFood"/>
+        <activity android:name=".Food.EditFood"/>
+        <activity android:name=".Food.SelectFood"/>
+        <activity android:name=".Food.my_cart"/>
+        <activity android:name=".Food.Notifications"/>
+        <activity android:name=".Food.ViewOrder"/>
+        <activity android:name=".Food.ViewPayment"/>
+
+
+        <activity
+            android:name=".Movies.Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
